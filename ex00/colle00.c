@@ -14,17 +14,25 @@ void	colle(int x, int y)
 		while (b < x)
 		{
 			if ((a == 0 || a == y - 1) && (b == 0 || b == x - 1))
+			{
 				ft_putchar('o');
+			}
 			else if (a == 0 || a == y - 1)
+			{
 				ft_putchar('-');
+			}
 			else if (b == 0 || b == x - 1)
+			{
 				ft_putchar('|');
+			}
 			else
+			{
 				ft_putchar(' ');
-			b++;
+			}
+			b = b + 1;
 		}
 		ft_putchar('\n');
 		b = 0;
-		a++;
+		a = a + 1;
 	}
 }
